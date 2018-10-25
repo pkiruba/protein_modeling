@@ -13,12 +13,14 @@ aligned_hits = 'template_hits.csv'
 template_pdb_files = os.path.join(os.getcwd(), 'pdb_structure_files')
 
 def sequence_alignment(target_sequence, template_sequence):
+	'''Protein sequence alignment using EMBOSS program''' 
 	for template_seq in template_sequence:
 		target_seq_id = os.path.basename(target_sequence).split('.')[0]
 		template_seq_id = os.path.basename(template_seq).split('.')[0]
 		os.system('{0} -sid1 {1} -asequence {2} -sid2 {3} -bsequence {4} -gapopen 10.0 -gapextend 0.5 -aformat3 markx3 -outfile {1}_{3}.needle'.format(EMBOSS, target_seq_id, target_sequence, template_seq_id, template_seq))
 		
 def top_hits_from_sequence_alignment(alignend_sequence):
+	'''Selecting the template hits based on the ranking of score values'''
 	result_table = pd.DataFrame(columns = ('query', 'template', 'length', 'identity', 'similarity', 'gaps', 'score'))
 	emboss_ind_title = 1
 	for alignment_file in alignend_sequence:
@@ -46,6 +48,7 @@ def top_hits_from_sequence_alignment(alignend_sequence):
 	top_hit_table[:10].to_csv(aligned_hits, sep=',', index=False)
 	
 def modeling(template_hits, template_pdb_path, target_seq_path):
+	'''Modeling of protein structure using PyRosetta pose manupluation application'''
 	top_hit_template_file_path = []
 	with open(template_hits, newline='') as csvFile:
 		reader = csv.DictReader(csvFile)
