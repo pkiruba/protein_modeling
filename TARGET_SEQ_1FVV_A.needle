@@ -1,0 +1,51 @@
+########################################
+# Program: needle
+# Rundate: Thu 25 Oct 2018 13:00:04
+# Commandline: needle
+#    -sid1 TARGET_SEQ
+#    -asequence TARGET_SEQ.fasta
+#    -sid2 1FVV_A
+#    -bsequence /Users/kirubapalani/Desktop/git_hub_tutorial/pdb_sequeuce_fasta/1FVV_A.fasta
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -aformat3 markx3
+#    -outfile TARGET_SEQ_1FVV_A.needle
+# Align_format: markx3
+# Report_file: TARGET_SEQ_1FVV_A.needle
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: TARGET_SEQ
+# 2: 1FVV_A
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 298
+# Identity:     295/298 (99.0%)
+# Similarity:   295/298 (99.0%)
+# Gaps:           3/298 ( 1.0%)
+# Score: 1535.0
+# 
+#
+#=======================================
+
+>TARGET_SEQ ..
+MENFQKVEKIGEGTYGVVYKARNKLTGEVVALKKIRLDTETEGVPSTAIR
+EISLLKELNHPNIVKLLDVIHTENKLYLVFEFLHQDLKKFMDASALTGIP
+LPLIKSYLFQLLQGLAFCHSHRVLHRDLKPQNLLINTEGAIKLADFGLAR
+AFGVPVRTY-HEVVTLWYRAPEILLGCKYYSTAVDIWSLGCIFAEMVTRR
+ALFPGDSEIDQLFRIFRTLGTPDEVVWPGVTSMPDYKPSFPKWARQDFSK
+VVPPLDEDGRSLLSQMLHYDPNKRISAKAALAHPFFQDVTKPVPHL--
+>1FVV_A ..
+MENFQKVEKIGEGTYGVVYKARNKLTGEVVALKKIRLDTETEGVPSTAIR
+EISLLKELNHPNIVKLLDVIHTENKLYLVFEFLHQDLKKFMDASALTGIP
+LPLIKSYLFQLLQGLAFCHSHRVLHRDLKPQNLLINTEGAIKLADFGLAR
+AFGVPVRTYTHEVVTLWYRAPEILLGCKYYSTAVDIWSLGCIFAEMVTRR
+ALFPGDSEIDQLFRIFRTLGTPDEVVWPGVTSMPDYKPSFPKWARQDFSK
+VVPPLDEDGRSLLSQMLHYDPNKRISAKAALAHPFFQDVTKPVPHLRL
+
+#---------------------------------------
+#---------------------------------------

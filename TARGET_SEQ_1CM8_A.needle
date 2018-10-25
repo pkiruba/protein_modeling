@@ -1,0 +1,55 @@
+########################################
+# Program: needle
+# Rundate: Thu 25 Oct 2018 13:00:04
+# Commandline: needle
+#    -sid1 TARGET_SEQ
+#    -asequence TARGET_SEQ.fasta
+#    -sid2 1CM8_A
+#    -bsequence /Users/kirubapalani/Desktop/git_hub_tutorial/pdb_sequeuce_fasta/1CM8_A.fasta
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -aformat3 markx3
+#    -outfile TARGET_SEQ_1CM8_A.needle
+# Align_format: markx3
+# Report_file: TARGET_SEQ_1CM8_A.needle
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: TARGET_SEQ
+# 2: 1CM8_A
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 356
+# Identity:     108/356 (30.3%)
+# Similarity:   157/356 (44.1%)
+# Gaps:          90/356 (25.3%)
+# Score: 446.0
+# 
+#
+#=======================================
+
+>TARGET_SEQ ..
+-------------------MENFQKVEKIGEGTYGVVYKARNKLTGEVVA
+LKKIRLDTETEGVPSTAIREISLLKELNHPNIVKLLDVIHTENKL-----
+-YLVFEFLHQDLKKFMDASALTGIPLPLIKSYLFQLLQGLAFCHSHRVLH
+RDLKPQNLLINTEGAIKLADFGLARAFGVPVRTYHEVVTLWYRAPEILLG
+CKYYSTAVDIWSLGCIFAEMVTRRALFPGDSEIDQLFRIFRTLGTP----
+------DEVVWPGVTSMPDYKPSFPKWARQDFSKVVPPLDEDGRSLLSQM
+LHYDPNKRISAKAALAHPFFQDVTKPVPHL--------------------
+------
+>1CM8_A ..
+RSGFYRQEVTKTAWEVRAVYRDLQPV---------AVCSAVDGRTGAKVA
+IKKLYRPFQSELFAKRAYRELRLLKHMRHENVIGLLDVFTPDETLDDFTD
+FYLVMPFMGTDLGKLMKHEKLGE---DRIQFLVYQMLKGLRYIHAAGIIH
+RDLKPGNLAVNEDCELKILDFGLAR----QADSEMGVVTRWYRAPEVILN
+WMRYTQTVDIWSVGCIMAEMITGKTLFKGSDHLDQLKEIMKVTGTPPAEF
+VQRLQSDEA--------KNYMKGLPELEKKDFASILTNASPLAVNLLEKM
+LVLDAEQRVTAGEALAHPYFESL-----HQVQKYDDSRTLDEWKRVTYKE
+VLSFKP
+
+#---------------------------------------
+#---------------------------------------
