@@ -48,7 +48,7 @@ def top_hits_from_sequence_alignment(alignend_sequence):
 	top_hit_table[:10].to_csv(aligned_hits, sep=',', index=False)
 	
 def modeling(template_hits, template_pdb_path, target_seq_path):
-	'''Modeling of protein structure using PyRosetta pose manupluation application'''
+	'''Modeling of protein structure using PyRosetta pose manipulation application'''
 	top_hit_template_file_path = []
 	with open(template_hits, newline='') as csvFile:
 		reader = csv.DictReader(csvFile)
