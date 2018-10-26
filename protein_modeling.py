@@ -20,7 +20,11 @@ def sequence_alignment(target_sequence, template_sequence):
 		os.system('{0} -sid1 {1} -asequence {2} -sid2 {3} -bsequence {4} -gapopen 10.0 -gapextend 0.5 -aformat3 markx3 -outfile {1}_{3}.needle'.format(EMBOSS, target_seq_id, target_sequence, template_seq_id, template_seq))
 		
 def top_hits_from_sequence_alignment(alignend_sequence):
+<<<<<<< HEAD
 	'''Selecting the template hits based on the ranking of score'''
+=======
+	'''Selecting the template hits based on the ranking of score values'''
+>>>>>>> 901953ec38d2dbd60f7ad9a9502424d40b83140d
 	result_table = pd.DataFrame(columns = ('query', 'template', 'length', 'identity', 'similarity', 'gaps', 'score'))
 	emboss_ind_title = 1
 	for alignment_file in alignend_sequence:
