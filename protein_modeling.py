@@ -1,9 +1,6 @@
-import os
-import glob
+import os, glob, csv, sys
 import pandas as pd
-import csv
 from collections import defaultdict
-import sys
 import pyrosetta
 pyrosetta.init()
 
